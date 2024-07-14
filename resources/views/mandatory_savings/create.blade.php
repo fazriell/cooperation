@@ -10,7 +10,7 @@
          </div>
      @endif
 
-     <div class="card">
+     <div class="card rounded">
         <div class="card-header">
             Pembayaran Simpanan Wajib
         </div>

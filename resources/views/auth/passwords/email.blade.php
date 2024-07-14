@@ -44,4 +44,11 @@
         </div>
     </div>
 </div>
+
+<style>
+    body, html {
+        background-image: url('img/1.png');
+
+    }
+</style>
 @endsection

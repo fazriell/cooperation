@@ -7,7 +7,7 @@
         <h6><i class="icon fas fa-check"></i>{{ $message }}</h6>
     </div>
 @endif
-    <div class="card">
+    <div class="card rounded">
         <div class="card-header">
             <a href="{{ route('customer.create') }}" class="btn btn-success float-end">Tambah Data</a>
         </div>
@@ -18,7 +18,6 @@
                         <th>#</th>
                         <th>Kode</th>
                         <th>Nama</th>
-                        <th>Aksi</th>
                     </tr>
                 </thead>
 
@@ -43,4 +42,20 @@
             </table>
         </div>
     </div>
+    <style>
+        body {
+            background-image: url('img/1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: monospace;
+            font-size: 15px;
+        }
+
+        .card {
+            margin-top: 50px;
+
+        }
+    </style>
 @endsection

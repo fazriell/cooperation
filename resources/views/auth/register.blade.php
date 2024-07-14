@@ -2,11 +2,10 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card rounded">
                 <div class="card-header">{{ __('Register') }}</div>
-
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -74,4 +73,47 @@
         </div>
     </div>
 </div>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: url('img/1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: monospace;
+        font-size: 16px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .card {
+        width: 200%;
+        max-width: 500px;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        background-color: transparent;
+    }
+    .card-header {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .btn-primary {
+        width: 100%;
+
+    }
+    .btn-link {
+        display: block;
+        text-align: left;
+        margin-top: 1rem;
+    }
+</style>
 @endsection
